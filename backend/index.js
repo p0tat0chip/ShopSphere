@@ -7,13 +7,13 @@ import cors from 'cors';
 
 const app = express();
 
-const corsOptions = {
-  origin: 'https://shop-sphere-2n6k.vercel.app', 
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true, 
-};
+// const corsOptions = {
+//   origin: 'https://shop-sphere-2n6k.vercel.app', 
+//   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//   credentials: true, 
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 
 //Utils
@@ -28,7 +28,7 @@ const port = process.env.PORT || 5000;
 
 connectDB();
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
