@@ -3,6 +3,18 @@ import path from "path";
 import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
+import cors from 'cors';
+
+const app = express();
+
+const corsOptions = {
+  origin: 'https://shop-sphere-2n6k.vercel.app', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true, 
+};
+
+app.use(cors(corsOptions));
+
 
 //Utils
 import connectDB from "./config/db.js";
@@ -16,7 +28,6 @@ const port = process.env.PORT || 5000;
 
 connectDB();
 
-const app = express();
 app.use(express.static('public'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
