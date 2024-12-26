@@ -1,5 +1,7 @@
 # ShopSphere
 
+### This project has been officially accepted for Social Winter of Code (SWOC) 🎉🎊
+
 ShopSphere is a full-stack e-commerce website built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It provides users with a seamless shopping experience and includes features such as product listings, shopping cart functionality(to be implemented), secure payment integration (to be implemented), and an admin panel for managing the store (to be implemented).
 
 ![Screenshot 2024-12-25 105159](https://github.com/user-attachments/assets/06a4839a-68c9-4484-b99d-a352bd5bebfb)
@@ -75,11 +77,12 @@ Ensure you have the following installed on your system:
    # Start the frontend client
    cd frontend
    npm run frontend 
-   ** Try to run both frontend and backend concurrently even if you are only interested in working with frontend for the website to run smoothly as frontend is heavily dependent on the backend
+   
    ```
+Try to run both frontend and backend concurrently even if you are only interested in working with frontend for the website to run smoothly as frontend is heavily dependent on the backend
 
 5. **Access the Application:**
-   Open your browser and go to `http://localhost:3000` to see the application running.
+   Open your browser and go to `http://localhost:3000` to see the application running. (Replace the localhost url if you are running the code somewhere else)
 
 ---
 
@@ -92,19 +95,20 @@ We welcome contributions to make ShopSphere better! To contribute:
  ```bash
    git clone https://github.com/your-username/shopsphere.git
    ```
-3. Create a new branch for your feature or bug fix: (There are some)
+3. Create a new branch for your feature or bug fix:
+   (There are some codes which have been commented for references you can either uncomment it and improve the code for integrating purpose or remove the commented code to make your own code)
    ```bash
    git checkout -b feature-name
    ```
-4. Commit your changes:
+5. Commit your changes:
    ```bash
    git commit -m "Add your message here"
    ```
-5. Push your branch:
+6. Push your branch:
    ```bash
    git push origin feature-name
    ```
-6. Open a pull request on the main repository.
+7. Open a pull request on the main repository.
 
 ---
 
