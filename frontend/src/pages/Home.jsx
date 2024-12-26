@@ -6,13 +6,13 @@ import Header from "../components/Header";
 import Product from "./Products/Product";
 
 const Home = () => {
-  // const { keyword } = useParams();
-  // const { data, isLoading, isError } = useGetProductsQuery({ keyword });
+  const { keyword } = useParams();
+  const { data, isLoading, isError } = useGetProductsQuery({ keyword });
 
   return (
     <>
     <div className="flex justify-center">Home</div>
-      {/* {!keyword && <Header />}
+      {!keyword && <Header />}
       {isLoading ? (
         <Loader />
       ) : isError ? (
@@ -50,7 +50,7 @@ const Home = () => {
             </div>
           </main>
         </>
-      )} */}
+      )}
     </>
   );
 };
