@@ -92,7 +92,7 @@ We welcome contributions to make ShopSphere better! To contribute:
  ```bash
    git clone https://github.com/your-username/shopsphere.git
    ```
-3. Create a new branch for your feature or bug fix:
+3. Create a new branch for your feature or bug fix: (There are some)
    ```bash
    git checkout -b feature-name
    ```

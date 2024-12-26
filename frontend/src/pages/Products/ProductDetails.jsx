@@ -24,7 +24,7 @@ const ProductDetails = () => {
     const [createReview, {isLoading: loadingProductReview}] = useCreateReviewMutation()
   return (
     <>
-      <div>
+      {/* <div>
         <Link to="/" className="text-white font-semibold hover:underline ml-[10rem]">Go Back</Link>
       
       </div>
@@ -56,10 +56,10 @@ const ProductDetails = () => {
                 </div>
             </div>
             </div>
-          </div>
-          </>
+          </div> */}
+          {/* </>
         
-      )}
+      )} */}
     </>
   )
 }
