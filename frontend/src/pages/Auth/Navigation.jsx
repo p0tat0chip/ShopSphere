@@ -16,7 +16,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { useLogoutMutation } from "../redux/api/userApiSlice";
 import { logout } from "../redux/features/auth/authSlice";
 import FavoriteCount from "../Products/FavoriteCount";
+<<<<<<< HEAD
 
+=======
+import { toast } from "react-toastify";
+>>>>>>> origin/main
 const Navigation = () => {
   const { userInfo } = useSelector((state) => state.auth);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -38,6 +42,7 @@ const Navigation = () => {
     try {
       await logoutApiCall().unwrap();
       dispatch(logout());
+      toast.info("Logged Out")
       navigate("/");
     } catch (error) {
       console.log(error);
