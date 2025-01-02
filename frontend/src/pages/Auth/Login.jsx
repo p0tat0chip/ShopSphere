@@ -54,7 +54,7 @@ const Login = () => {
               <input
                 type="email"
                 id="email"
-                className="mt-1 p-2 border rounded w-full"
+                className="w-1/4 md:w-1/2 lg:w-3/4 xl:w-full mt-1 p-2 border rounded"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -70,7 +70,7 @@ const Login = () => {
               <input
                 type="password"
                 id="password"
-                className="mt-1 p-2 border rounded w-full"
+                className="w-1/4 md:w-1/2 lg:w-3/4 xl:w-full mt-1 p-2 border rounded"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -98,7 +98,7 @@ const Login = () => {
         <img
           src="https://plus.unsplash.com/premium_photo-1676009551532-c73be6605e3a?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt=""
-          className="h-[40rem] w-[35%] right-0 absolute xl:block sm:hidden rounded-lg"
+          className="hidden md:visible h-[40rem] w-[35%] right-0 absolute md:block rounded-lg"
         />
       </section>
     </div>
