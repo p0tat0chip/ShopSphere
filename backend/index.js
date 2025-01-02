@@ -4,14 +4,9 @@ import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
 import cors from 'cors';
+import corsMiddlware from './middleware/corsMiddleware.js';
 
 const app = express();
-
-const corsOptions = {
-  origin: 'https://shop-sphere-2n6k.vercel.app', 
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true, 
-};
 
 app.use(cors(corsOptions));
 
