@@ -10,7 +10,6 @@ const app = express();
 
 app.use(cors(corsOptions));
 
-
 //Utils
 import connectDB from "./config/db.js";
 import userRoutes from "./routes/userRoutes.js";
