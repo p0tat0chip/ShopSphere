@@ -61,7 +61,7 @@ const Register = () => {
             <input
               type="text"
               id="name"
-              className="mt-1 p-2 border rounded w-full"
+              className=" w-1/4 md:w-1/2 lg:w-full mt-1 p-2 border rounded "
               placeholder="Enter name"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -70,14 +70,14 @@ const Register = () => {
           <div className="my-[2rem]">
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-white"
+              className="w-1/4 md:w-1/2 lg:w-full block text-sm font-medium text-white"
             >
               Email
             </label>
             <input
               type="email"
               id="email"
-              className="mt-1 p-2 border rounded w-full"
+              className="w-1/4 md:w-1/2 lg:w-full mt-1 p-2 border rounded"
               placeholder="Enter email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -93,7 +93,7 @@ const Register = () => {
             <input
               type="password"
               id="password"
-              className="mt-1 p-2 border rounded w-full"
+              className="w-1/4 md:w-1/2 lg:w-full mt-1 p-2 border rounded"
               placeholder="Enter password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -109,7 +109,7 @@ const Register = () => {
             <input
               type="password"
               id="confirmPassword"
-              className="mt-1 p-2 border rounded w-full"
+              className="w-1/4 md:w-1/2 lg:w-full mt-1 p-2 border rounded"
               placeholder="Confirm Password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
