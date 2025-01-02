@@ -3,12 +3,8 @@ import path from "path";
 import express from "express";
 import dotenv from "dotenv";
 import cookieParser from "cookie-parser";
-import cors from 'cors';
-import corsMiddlware from './middleware/corsMiddleware.js';
 
 const app = express();
-
-app.use(corsMiddleware);
 
 //Utils
 import connectDB from "./config/db.js";
@@ -16,7 +12,9 @@ import userRoutes from "./routes/userRoutes.js";
 import categoryRoutes from "./routes/categoryRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
+import corsMiddleware from "./middleware/corsMiddleware.js";
 
+app.use(corsMiddleware);
 dotenv.config();
 const port = process.env.PORT || 5000;
 
