@@ -5,7 +5,6 @@ import Loader from "../../components/Loader";
 import { useLoginMutation } from "../redux/api/userApiSlice";
 import { setCredientials } from "../redux/features/auth/authSlice";
 import { toast } from "react-toastify";
-import gsap from "gsap";
 import { LOGIN_BG } from "../../Utils/constants";
 
 const Login = () => {
@@ -26,14 +25,6 @@ const Login = () => {
       navigate(redirect);
     }
   }, [navigate, redirect, userInfo]);
-
-  useEffect(() => {
-    gsap.fromTo(
-      formRef.current,
-      { opacity: 0 },
-      { opacity: 1, duration: 1, delay: 0.2 }
-    );
-  }, []);
 
   const submitHandler = async (e) => {
     e.preventDefault();
