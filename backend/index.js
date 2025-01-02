@@ -8,7 +8,7 @@ import corsMiddlware from './middleware/corsMiddleware.js';
 
 const app = express();
 
-app.use(cors(corsOptions));
+app.use(corsMiddleware);
 
 //Utils
 import connectDB from "./config/db.js";
