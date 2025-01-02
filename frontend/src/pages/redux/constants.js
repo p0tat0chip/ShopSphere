@@ -1,5 +1,5 @@
 export const BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://shop-sphere-liard.vercel.app/' 
+  ? 'https://shop-sphere-2n6k.vercel.app/'
   : '';
 export const USERS_URL = '/api/users'
 export const CATEGORY_URL = '/api/category'
