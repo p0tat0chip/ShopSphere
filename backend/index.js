@@ -19,8 +19,8 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-console.log("CORS Origin: ", corsOptions.origin);
-console.log("API URL: ", process.env.VITE_BACKEND_URL);
+// console.log("CORS Origin: ", corsOptions.origin);
+// console.log("API URL: ", process.env.VITE_BACKEND_URL);
 
 //Utils
 import connectDB from "./config/db.js";
