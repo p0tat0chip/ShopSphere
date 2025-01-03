@@ -1,7 +1,7 @@
 import cors from 'cors';
 
 const corsOptions = {
-    origin: 'https://shop-sphere-2n6k.vercel.app/',
+    origin: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     credentials: true,
 };
