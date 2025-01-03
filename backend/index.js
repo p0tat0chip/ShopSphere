@@ -8,10 +8,13 @@ import cors from 'cors';
 const app = express();
 
 const corsOptions = {
-  origin: 'https://shop-sphere-2n6k.vercel.app', 
+  origin: process.env.NODE_ENV === 'production'
+    ? 'https://shop-sphere-2n6k.vercel.app'
+    : 'http://localhost:3000',  
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true, 
+  credentials: true,
 };
+
 
 app.use(cors(corsOptions));
 
