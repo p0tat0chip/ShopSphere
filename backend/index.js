@@ -10,7 +10,7 @@ const app = express();
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production'
     ? 'https://shop-sphere-2n6k.vercel.app'
-    : 'http://localhost:3000',  
+    : 'http://localhost:5000',  
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 };
