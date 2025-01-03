@@ -11,7 +11,7 @@ const app = express();
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production'
     ? 'https://shop-sphere-2n6k.vercel.app'
-    : 'http://localhost:5000',  
+    : 'http://localhost:5173/',  
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 };
@@ -19,7 +19,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-// console.log("CORS Origin: ", corsOptions.origin);
+console.log("CORS Origin: ", corsOptions.origin);
 // console.log("API URL: ", process.env.VITE_BACKEND_URL);
 
 //Utils
